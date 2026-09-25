@@ -15,7 +15,7 @@ Python · Streamlit · SQLite · Plotly · ReportLab
 
 ## Live Demo
 
-**Coming soon --- Streamlit Community Cloud deployment**
+[Launch the Live Demo](https://trade-blotter-gaspar-raybaud-mabily.streamlit.app)
 
 ------------------------------------------------------------------------
 
