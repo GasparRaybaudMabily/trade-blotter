@@ -19,6 +19,16 @@ Python · Streamlit · SQLite · Plotly · ReportLab
 
 ------------------------------------------------------------------------
 
+## Project Report
+
+A detailed project report covering the functional design, financial product
+modeling, application architecture, validation logic, post-trade workflow,
+audit controls, deployment choices, limitations, and potential extensions.
+
+[Read the Project Report](docs/Trade_Blotter_Project_Report.pdf)
+
+------------------------------------------------------------------------
+
 ## Overview
 
 Trade Blotter is an interactive post-trade management application
