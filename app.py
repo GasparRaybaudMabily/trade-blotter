@@ -21,6 +21,7 @@ from services.confirmation_service import generate_confirmation, render_trade_re
 from services.email_service import send_confirmation
 from services.exposure_service import exposure_tables
 from services.user_service import list_users
+from seed_demo import seed
 
 
 load_dotenv()
@@ -28,6 +29,12 @@ load_dotenv()
 st.set_page_config(page_title="Trade Blotter", page_icon="▦", layout="wide", initial_sidebar_state="expanded")
 
 init_db()
+
+# Seed the synthetic demo dataset only when the database is empty.
+# This makes fresh deployments immediately usable without resetting
+# trades created during normal Streamlit reruns.
+if not list_trades():
+    seed()
 
 
 NAVY="#17365D"; BLUE="#2E75B6"; PALE="#EAF2F8"; GREEN="#16794B"; ORANGE="#B76500"; RED="#B42318"; MUTED="#667085"
